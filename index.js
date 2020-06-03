@@ -19,6 +19,8 @@ app.set('views', 'views')
 // set static folder
 app.use(express.static('public'))
 
+app.use(express.urlencoded({extended: true}))
+
 // routes
 app.use('/', homeRoutes)
 app.use('/add', addRoutes)

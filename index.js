@@ -21,6 +21,7 @@ app.set('views', 'views')
 // set static folder
 app.use(express.static(path.join(__dirname, 'public')))
 
+// parses incoming requests with urlencoded payloads
 app.use(express.urlencoded({extended: true}))
 
 // routes

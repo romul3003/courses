@@ -2,10 +2,13 @@ const { v4: uuid } = require("uuid"); // generates differne uniq ids for differe
 const fs = require("fs");
 const path = require("path");
 
+// model Course for saving data
 class Course {
   constructor(title, price, img) {
-    (this.title = title), (this.price = price), (this.img = img);
-    this.id = uuid();
+    this.title = title
+    this.price = price
+    this.img = img
+    this.id = uuid()
   }
 
   toJSON() {

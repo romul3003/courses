@@ -4,7 +4,8 @@ const router = Router();
 
 // get request courses
 router.get("/", async (req, res) => {
-  const courses = await Course.find(); // get all courses from db
+  // get all courses from db
+  const courses = await Course.find()
 
   res.render("courses", {
     title: "Courses",

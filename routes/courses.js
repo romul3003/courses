@@ -35,6 +35,7 @@ router.post('/edit', async (req, res) => {
   res.redirect('/courses')
 })
 
+// delete course
 router.post('/remove', async (req, res) => {
   try {
     await Course.deleteOne({ _id: req.body.id })

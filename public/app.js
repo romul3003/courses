@@ -1,7 +1,7 @@
 const toCurrency = price => {
-  return new Intl.NumberFormat('uk-UK', {
+  return new Intl.NumberFormat('en-US', {
     currency: 'uah',
-    style: 'currency'
+    style: 'currency',
   }).format(price)
 }
 
